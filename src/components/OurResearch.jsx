@@ -27,27 +27,24 @@ function FifthPage() {
 
   // Content for the right side
   const rightContent = (
-    <div className='mb-10  '>
-      <div className="relative dualbtn  bg-orange-100 border-white border-4 rounded-3xl justify-between w-24 h-12 z-20 ml-0 hidden xl:flex text-start xl:ml-5 xl:mt-14 2xl:ml-20">
-       <button
-          className="left text-3xl hover:bg-yellow-500 active:bg-yellow-500 w-12 rounded-l-3xl text-gray-900"
-          onClick={() => setIsLeftActive(false)}
-        >
-          &lt;
-        </button>
-        <button
-          className="right text-3xl hover:bg-yellow-500 active:bg-yellow-500 w-12 rounded-r-3xl text-gray-900"
-          onClick={() => setIsLeftActive(true)}
-        >
-          &gt;
-        </button>
-        </div>
-      <img src={image} alt="" className=" border-8 border-white border-solid rounded-3xl drop-shadow-md z-20  h-auto w-96 mx-auto lg:-mt-16 lg:w-auto" />
-      <img src={circle} alt="" className="xl:h-28 xl:w-28 xl:-mt-16 xl:ml-7 2xl:ml-20  hidden xl:flex" />
-      
-       
-      
+      <div className='mb-10'>
+    <div className="relative dualbtn bg-orange-200 border-white border-4 rounded-3xl justify-between w-24 h-12 z-20 ml-0 hidden xl:flex text-start xl:ml-5 xl:mt-14 2xl:ml-20">
+      <button
+        className={`left text-3xl ${isLeftActive ? 'bg-yellow-400' : 'bg-orange-200'} w-12 rounded-l-3xl text-gray-900`}
+        onClick={() => setIsLeftActive(true)} 
+      >
+        &lt;
+      </button>
+      <button
+        className={`right text-3xl ${!isLeftActive ? 'bg-yellow-400' : 'bg-orange-200'} w-12 rounded-r-3xl text-gray-900`}
+        onClick={() => setIsLeftActive(false)} 
+      >
+        &gt;
+      </button>
     </div>
+    <img src={image} alt="" className="border-8 border-white border-solid rounded-3xl drop-shadow-md z-20 h-auto w-96 mx-auto lg:-mt-16 lg:w-auto" />
+    <img src={circle} alt="" className="xl:h-28 xl:w-28 xl:-mt-16 xl:ml-7 2xl:ml-20 hidden xl:flex" />
+  </div>
   );
 
   return (
