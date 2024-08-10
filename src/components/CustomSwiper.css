@@ -1,0 +1,12 @@
+/* custom-swiper.css */
+.swiper-pagination-bullet {
+    background-color: #e2dc2f; /* Light yellow for inactive dots */
+    transition: background-color 0.3s ease;
+    height: 0.8rem;
+    width: 0.8rem;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #fbbf24; /* Dark yellow for active dot */
+  }
+  
