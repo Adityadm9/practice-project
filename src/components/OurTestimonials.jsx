@@ -10,7 +10,7 @@ import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import './CustomSwiper.css';
+import "./CustomSwiper.css";
 import { Pagination } from "swiper/modules";
 function SeventhPage() {
   return (
@@ -23,12 +23,12 @@ function SeventhPage() {
           </span>
         </h1>
         <Swiper
-           spaceBetween={30}
-           pagination={{
-             clickable: true,
-           }}
-           modules={[Pagination]}
-           className="mySwiper"
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination]}
+          className="mySwiper"
         >
           <SwiperSlide>
             <div className="slide">
@@ -52,7 +52,6 @@ function SeventhPage() {
                   </span>
                 </div>
               </div>
-              
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -77,7 +76,6 @@ function SeventhPage() {
                   </span>
                 </div>
               </div>
-              
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -102,7 +100,6 @@ function SeventhPage() {
                   </span>
                 </div>
               </div>
-              
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -127,7 +124,6 @@ function SeventhPage() {
                   </span>
                 </div>
               </div>
-              
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -152,12 +148,10 @@ function SeventhPage() {
                   </span>
                 </div>
               </div>
-              
             </div>
           </SwiperSlide>
-          
         </Swiper>
-        </div>
+      </div>
     </>
   );
 }

@@ -18,7 +18,7 @@ function Footer() {
     <>
       <div className=" ">
         <div className="sm:flex sm:justify-center ">
-          <img src={TheFirm} alt="" className="mx-auto" />
+          <img src={TheFirm} alt="" className="mx-auto hover:scale-110 cursor-pointer" />
         </div>
         <ul className="font-nunito font-bold text-gray-900  sm:gap-4 text-lg px-2 gap-10 cursor-pointer  sm:flex justify-center sm:mt-16 mt-7 text-center">
           <li></li>

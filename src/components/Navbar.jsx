@@ -21,18 +21,22 @@ function Navbar() {
     <div className="px-4 py-4">
       <div className="flex items-center justify-between">
         <div className="flex-shrink-0">
-          <img className="w-52 h-8" src={TheFirm} alt="No Image" />
+          <img className="w-52 h-8 hover:scale-110 cursor-pointer" src={TheFirm} alt="No Image" />
         </div>
 
         <ul className="hidden lg:flex font-nunito font-bold text-gray-900  lg:gap-6 xl:gap-10 items-center text-lg cursor-pointer  ">
           {navItems.map((item) => (
-            <li key={item.label} href={item.href} className="hover:underline hover:decoration-yellow-500 hover:decoration-4 hover:scale-110"> 
+            <li
+              key={item.label}
+              href={item.href}
+              className="hover:underline hover:decoration-yellow-500 hover:decoration-4 hover:scale-110"
+            >
               {item.label}
             </li>
           ))}
           <li className="bg-yellow-400 px-2 py-2 rounded-md text-white hover:scale-110">
-        <button>Get In Touch</button>
-      </li>
+            <button>Get In Touch</button>
+          </li>
         </ul>
 
         <div className="lg:hidden flex items-center">
@@ -60,8 +64,12 @@ function Navbar() {
 
       <div className={`lg :hidden mt-4 ${isMenuOpen ? "block" : "hidden"}`}>
         <ul className="space-y-4 font-nunito font-bold text-gray-900 text-lg">
-        {navItems.map((item) => (
-            <li key={item.label} href={item.href} className="hover:text-yellow-500"> 
+          {navItems.map((item) => (
+            <li
+              key={item.label}
+              href={item.href}
+              className="hover:text-yellow-500"
+            >
               {item.label}
             </li>
           ))}
